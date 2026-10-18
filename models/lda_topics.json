@@ -1,0 +1,80 @@
+{
+  "Topic_1": {
+    "keywords": [
+      "walk",
+      "hour",
+      "bird",
+      "worth",
+      "local",
+      "fall",
+      "water",
+      "dont"
+    ],
+    "interpretation": "Accessibility & Journey"
+  },
+  "Topic_2": {
+    "keywords": [
+      "buddha",
+      "museum",
+      "garden",
+      "history",
+      "house",
+      "country",
+      "interesting",
+      "story"
+    ],
+    "interpretation": "Cultural Heritage & History"
+  },
+  "Topic_3": {
+    "keywords": [
+      "hindu",
+      "shirt",
+      "tree",
+      "buddhist",
+      "kovil",
+      "evening",
+      "ceremony",
+      "city"
+    ],
+    "interpretation": "General Destination Environment"
+  },
+  "Topic_4": {
+    "keywords": [
+      "tour",
+      "guide",
+      "factory",
+      "shop",
+      "interesting",
+      "free",
+      "different",
+      "plantation"
+    ],
+    "interpretation": "General Destination Environment"
+  },
+  "Topic_5": {
+    "keywords": [
+      "elephant",
+      "jeep",
+      "animal",
+      "turtle",
+      "people",
+      "water",
+      "island",
+      "wild"
+    ],
+    "interpretation": "Wildlife & Safari Experience"
+  },
+  "Topic_6": {
+    "keywords": [
+      "jaffna",
+      "site",
+      "shoe",
+      "inside",
+      "worth",
+      "rock",
+      "remove",
+      "statue"
+    ],
+    "interpretation": "Cultural Heritage & History"
+  }
+}

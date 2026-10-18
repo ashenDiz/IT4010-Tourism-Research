@@ -1,0 +1,44 @@
+{
+  "total_reviews": 16156,
+  "unique_destinations": 76,
+  "unique_categories": 11,
+  "rating_distribution": {
+    "1": 487,
+    "2": 658,
+    "3": 2166,
+    "4": 5196,
+    "5": 7649
+  },
+  "sentiment_distribution": {
+    "Positive": 12845,
+    "Neutral": 2166,
+    "Negative": 1145
+  },
+  "imbalance_ratio": 11.22,
+  "top_10_destinations": {
+    "Pinnawala Elephant Orphanage": 369,
+    "Royal Botanical Gardens": 337,
+    "Polonnaruwa": 333,
+    "Wilpattu National Park": 326,
+    "Dambulla Cave Temple": 321,
+    "Bluefield Tea Gardens": 314,
+    "Sigiriya Museum": 314,
+    "Ceylon Tea Museum": 305,
+    "Handunugoda Tea Estate": 304,
+    "Glenloch Tea Factory": 302
+  },
+  "bottom_5_destinations": {
+    "Diyaluma Falls": 86,
+    "Ariyapala Mask Museum": 77,
+    "Dagoba of Thuparama": 77,
+    "Baker's Falls": 74,
+    "Kumana National Park": 35
+  },
+  "text_length_stats": {
+    "mean_word_count": 70.1,
+    "median_word_count": 52.0,
+    "min_word_count": 1,
+    "max_word_count": 1700,
+    "short_reviews_under_15_words": 26
+  }
+}

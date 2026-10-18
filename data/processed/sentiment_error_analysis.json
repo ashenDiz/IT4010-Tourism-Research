@@ -1,0 +1,56 @@
+{
+  "confusion_matrix": {
+    "Negative": {
+      "Negative": 145,
+      "Neutral": 65,
+      "Positive": 19
+    },
+    "Neutral": {
+      "Negative": 63,
+      "Neutral": 206,
+      "Positive": 164
+    },
+    "Positive": {
+      "Negative": 76,
+      "Neutral": 401,
+      "Positive": 2093
+    }
+  },
+  "total_misclassified": 788,
+  "misclassification_rate": 0.2438,
+  "short_review_errors_count": 169,
+  "neutral_borderline_errors_count": 227,
+  "critical_negative_missed_as_positive": 19,
+  "sample_failure_cases": [
+    {
+      "location": "New Ranweli Spice Garden",
+      "true_label": "Positive",
+      "predicted_label": "Neutral",
+      "snippet": "The spice garden is a treasure trove of knowledge and spice fragrances. The guide at the garden explains each of the spices and gives a detailed encou..."
+    },
+    {
+      "location": "Kelaniya Raja Maha Vihara",
+      "true_label": "Negative",
+      "predicted_label": "Positive",
+      "snippet": "Well when i ve been to dubai and visit the mosque in abu dabhi people were friendly for people who pray i can understand its annoying to get tourists,..."
+    },
+    {
+      "location": "Jaya Sri Maha Bodhi",
+      "true_label": "Positive",
+      "predicted_label": "Neutral",
+      "snippet": "I enjoyed our stop at the Bodhi tree along with the other sites in the area.  The ancient tree itself is on a raised platform with other, newer trees ..."
+    },
+    {
+      "location": "Damro Labookellie Tea Centre and Tea Garden",
+      "true_label": "Positive",
+      "predicted_label": "Neutral",
+      "snippet": "This is a free and basic tour of a tea factory with a free cup of tea afterwards.\n\nIt's great Damro does this. I learnt a lot about the tea process.\n\n..."
+    },
+    {
+      "location": "Pedro Tea Factory",
+      "true_label": "Positive",
+      "predicted_label": "Neutral",
+      "snippet": "The tea factory is among a huge tea plantation. They take you on the tour in groups, while waiting for your turn or after the tour you can relish thei..."
+    }
+  ]
+}

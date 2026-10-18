@@ -1,0 +1,15 @@
+{
+  "Arrivals_Lag1": 48.01,
+  "Crowd_Sentiment": 28.52,
+  "Is_Peak_Season": 11.65,
+  "Safety_Sentiment": 3.0,
+  "Is_Monsoon_Season": 2.54,
+  "Arrivals_Lag6": 1.54,
+  "Sentiment_Rolling3": 1.5,
+  "Cleanliness_Sentiment": 1.46,
+  "Cost_Sentiment": 0.95,
+  "Arrivals_Lag3": 0.39,
+  "Month": 0.28,
+  "Sentiment_Score": 0.15,
+  "Is_Festival_Month": 0.02
+}

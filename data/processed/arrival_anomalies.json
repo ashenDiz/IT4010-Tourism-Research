@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2019-05-01",
+    "type": "Macroeconomic / External Shock",
+    "description": "Post-Easter Sunday Terror Incident (Significant Arrival Slump)",
+    "arrivals": 37802,
+    "sentiment": 0.87
+  },
+  {
+    "date": "2020-04-01",
+    "type": "Macroeconomic / External Shock",
+    "description": "Global COVID-19 Travel Lockdowns (Complete Demand Collapse)",
+    "arrivals": 0,
+    "sentiment": 1.0
+  },
+  {
+    "date": "2022-05-01",
+    "type": "Macroeconomic / External Shock",
+    "description": "Macroeconomic & Fuel Crisis Shocks (Severe Disruption)",
+    "arrivals": 30207,
+    "sentiment": 0.778
+  },
+  {
+    "date": "2023-01-01",
+    "type": "Macroeconomic / External Shock",
+    "description": "Post-Crisis Winter Peak Recovery Surge",
+    "arrivals": 102544,
+    "sentiment": 0.905
+  },
+  {
+    "date": "2023-05-01",
+    "type": "Model Divergence Anomaly",
+    "description": "Actual (83,309) vs Forecast (33,544) diverged by 59.74%",
+    "arrivals": 83309,
+    "divergence_pct": 59.74
+  }
+]

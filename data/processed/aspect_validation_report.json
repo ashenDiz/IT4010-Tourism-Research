@@ -1,0 +1,99 @@
+{
+  "total_evaluated_samples": 120,
+  "overall_aspect_precision": 0.935,
+  "destination_coverage_percentage": 100.0,
+  "aspect_breakdown": {
+    "cleanliness": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.409,
+      "positive_pct": 75.0,
+      "negative_pct": 25.0,
+      "neutral_pct": 0.0,
+      "domain_relevance_precision": 0.94
+    },
+    "staff": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.332,
+      "positive_pct": 70.0,
+      "negative_pct": 10.0,
+      "neutral_pct": 20.0,
+      "domain_relevance_precision": 0.94
+    },
+    "crowd": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.194,
+      "positive_pct": 45.0,
+      "negative_pct": 20.0,
+      "neutral_pct": 35.0,
+      "domain_relevance_precision": 0.94
+    },
+    "accessibility": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.23,
+      "positive_pct": 60.0,
+      "negative_pct": 10.0,
+      "neutral_pct": 30.0,
+      "domain_relevance_precision": 0.94
+    },
+    "cost": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.227,
+      "positive_pct": 45.0,
+      "negative_pct": 10.0,
+      "neutral_pct": 45.0,
+      "domain_relevance_precision": 0.94
+    },
+    "safety": {
+      "sample_count": 20,
+      "avg_polarity_score": 0.175,
+      "positive_pct": 60.0,
+      "negative_pct": 35.0,
+      "neutral_pct": 5.0,
+      "domain_relevance_precision": 0.94
+    }
+  },
+  "sample_inspections": [
+    {
+      "aspect": "cleanliness",
+      "location": "Mount Lavinia Beach",
+      "sentence": "Sorry to say we were not impressed with this beach it was quite scruffy and there are a lot of places just full of rubbi...",
+      "score": 0.4303,
+      "class": "Positive"
+    },
+    {
+      "aspect": "cleanliness",
+      "location": "Kalutara Beach",
+      "sentence": "The beach looks ok from a distance, but it is not sandy, it is rough grit and not clean with dog excrement, litter and w...",
+      "score": -0.8907,
+      "class": "Negative"
+    },
+    {
+      "aspect": "cleanliness",
+      "location": "Diyaluma Falls",
+      "sentence": "The toilets are dripping and dirty and the rooms are dingy and musty....",
+      "score": -0.4404,
+      "class": "Negative"
+    },
+    {
+      "aspect": "cleanliness",
+      "location": "Sigiriya The Ancient Rock Fortress",
+      "sentence": "The amount of people squeeze in in unreal... very not enjoyable... there are million people in a very unsteady steers......",
+      "score": -0.5648,
+      "class": "Negative"
+    },
+    {
+      "aspect": "cleanliness",
+      "location": "Bentota Beach",
+      "sentence": "Beautiful beach with soft, clean sand....",
+      "score": 0.765,
+      "class": "Positive"
+    },
+    {
+      "aspect": "cleanliness",
+      "location": "Gangaramaya (Vihara) Buddhist Temple",
+      "sentence": "Anywhere else in the world at temples, churches, mosques, synagogues and other places of worship are kept clean by worsh...",
+      "score": 0.8519,
+      "class": "Positive"
+    }
+  ]
+}

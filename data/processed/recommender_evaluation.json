@@ -1,0 +1,78 @@
+{
+  "mean_precision_at_3": 0.667,
+  "mean_precision_at_5": 0.64,
+  "mean_reciprocal_rank_mrr": 0.8,
+  "number_of_evaluated_personas": 5,
+  "persona_evaluations": [
+    {
+      "persona": "Wildlife Enthusiast",
+      "query": "wild safari to see wild elephants and leopards in nature",
+      "top_recommendations": [
+        "Udawalawe National Park",
+        "Kumana National Park",
+        "Minneriya National Park",
+        "Minneriya Tusker Safaris",
+        "Bundala National Park"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "persona": "Beach & Surf Vacationer",
+      "query": "golden sandy beach with surfing waves ocean sunset and swimming",
+      "top_recommendations": [
+        "Bentota Beach",
+        "Passikudah Beach",
+        "Mirissa Beach",
+        "Nilaveli Beach",
+        "Hikkaduwa Beach"
+      ],
+      "precision_at_3": 0.67,
+      "precision_at_5": 0.8,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "persona": "Cultural & Heritage Seeker",
+      "query": "ancient unesco world heritage ruins buddhist temples and rock fortress",
+      "top_recommendations": [
+        "Sigiriya The Ancient Rock Fortress",
+        "Polonnaruwa",
+        "Sigiriya Museum",
+        "Ruwanwelisaya",
+        "Jethawanaramaya Stupa"
+      ],
+      "precision_at_3": 0.33,
+      "precision_at_5": 0.2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "persona": "Scenic Hiking & Tea Country",
+      "query": "cool mountain climate scenic hiking trails tea plantations and waterfalls",
+      "top_recommendations": [
+        "Bluefield Tea Gardens",
+        "Handunugoda Tea Estate",
+        "Ceylon Tea Museum",
+        "Damro Labookellie Tea Centre and Tea Garden",
+        "Glenloch Tea Factory"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "persona": "Family Safe & Relaxation",
+      "query": "peaceful clean environment safe for children with friendly staff",
+      "top_recommendations": [
+        "Passikudah Beach",
+        "Bentota Beach",
+        "Nilaveli Beach",
+        "Marble Beach",
+        "Royal Botanical Gardens"
+      ],
+      "precision_at_3": 0.33,
+      "precision_at_5": 0.4,
+      "reciprocal_rank": 0.5
+    }
+  ]
+}

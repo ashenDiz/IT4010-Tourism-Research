@@ -1,0 +1,7 @@
+Model,Sentiment_Included,MAE,RMSE,MAPE (%)
+"Prophet (Baseline, No Sentiment)",No,103442.0,115524.0,104.51
+Prophet (Enhanced + Sentiment),Yes,105595.0,118979.0,107.1
+Random Forest (No Sentiment),No,14474.0,15567.0,14.32
+Random Forest (+ Sentiment Lags),Yes,14935.0,16721.0,14.74
+XGBoost (No Sentiment),No,19447.0,23835.0,18.92
+XGBoost (+ Sentiment Lags & Aspects),Yes,19006.0,23973.0,19.74

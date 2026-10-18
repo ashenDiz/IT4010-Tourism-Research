@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Database and user information
+*.db
+*.sqlite
+*.sqlite3
+
+# Raw datasets - review before publishing
+data/raw/
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE configuration
+.vscode/
+.idea/

@@ -1,0 +1,427 @@
+Location_Name,Aspect,Average_Score,Mention_Count,Positive_Count,Negative_Count,Neutral_Count,Positive_Ratio,Negative_Ratio
+Abhayagiri Dagaba,accessibility,0.207,29,16,3,10,0.552,0.103
+Abhayagiri Dagaba,cleanliness,0.713,3,3,0,0,1.0,0.0
+Abhayagiri Dagaba,cost,0.187,17,8,1,8,0.471,0.059
+Abhayagiri Dagaba,crowd,0.475,17,14,0,3,0.824,0.0
+Abhayagiri Dagaba,staff,0.595,5,4,0,1,0.8,0.0
+Ambewela Farms,accessibility,0.379,43,28,3,12,0.651,0.07
+Ambewela Farms,cleanliness,0.204,15,9,4,2,0.6,0.267
+Ambewela Farms,cost,-0.024,27,9,11,7,0.333,0.407
+Ambewela Farms,crowd,0.298,5,2,0,3,0.4,0.0
+Ambewela Farms,staff,0.214,18,11,5,2,0.611,0.278
+Ariyapala Mask Museum,accessibility,0.176,10,4,0,6,0.4,0.0
+Ariyapala Mask Museum,cost,0.293,29,19,5,5,0.655,0.172
+Ariyapala Mask Museum,crowd,0.108,4,3,1,0,0.75,0.25
+Ariyapala Mask Museum,staff,0.318,32,23,2,7,0.719,0.062
+Arugam Bay,accessibility,0.224,96,55,18,23,0.573,0.188
+Arugam Bay,cleanliness,0.435,35,27,8,0,0.771,0.229
+Arugam Bay,cost,0.204,62,30,12,20,0.484,0.194
+Arugam Bay,crowd,0.219,73,39,13,21,0.534,0.178
+Arugam Bay,safety,0.203,17,11,6,0,0.647,0.353
+Arugam Bay,staff,0.569,63,54,4,5,0.857,0.063
+Baker's Falls,accessibility,0.352,45,29,3,13,0.644,0.067
+Baker's Falls,cost,0.445,5,5,0,0,1.0,0.0
+Baker's Falls,crowd,0.33,5,3,0,2,0.6,0.0
+Bentota Beach,accessibility,0.327,67,41,4,22,0.612,0.06
+Bentota Beach,cleanliness,0.558,96,89,5,2,0.927,0.052
+Bentota Beach,cost,0.209,15,8,1,6,0.533,0.067
+Bentota Beach,crowd,0.434,77,56,3,18,0.727,0.039
+Bentota Beach,safety,0.468,30,26,3,1,0.867,0.1
+Bentota Beach,staff,0.603,24,21,1,2,0.875,0.042
+Bluefield Tea Gardens,accessibility,0.271,47,26,2,19,0.553,0.043
+Bluefield Tea Gardens,cleanliness,0.594,24,23,0,1,0.958,0.0
+Bluefield Tea Gardens,cost,0.252,99,62,12,25,0.626,0.121
+Bluefield Tea Gardens,crowd,0.156,27,14,5,8,0.519,0.185
+Bluefield Tea Gardens,safety,0.061,3,1,2,0,0.333,0.667
+Bluefield Tea Gardens,staff,0.395,180,132,11,37,0.733,0.061
+Brief Garden - Bevis Bawa,accessibility,0.152,129,57,28,44,0.442,0.217
+Brief Garden - Bevis Bawa,cleanliness,0.39,6,4,2,0,0.667,0.333
+Brief Garden - Bevis Bawa,cost,0.254,68,35,12,21,0.515,0.176
+Brief Garden - Bevis Bawa,crowd,0.667,38,36,0,2,0.947,0.0
+Brief Garden - Bevis Bawa,safety,0.316,12,7,1,4,0.583,0.083
+Brief Garden - Bevis Bawa,staff,0.399,69,49,9,11,0.71,0.13
+Bundala National Park,accessibility,0.259,32,15,5,12,0.469,0.156
+Bundala National Park,cleanliness,0.595,3,3,0,0,1.0,0.0
+Bundala National Park,cost,0.334,33,21,2,10,0.636,0.061
+Bundala National Park,crowd,0.375,60,42,7,11,0.7,0.117
+Bundala National Park,staff,0.459,126,97,4,25,0.77,0.032
+Ceylon Tea Museum,accessibility,0.253,75,40,8,27,0.533,0.107
+Ceylon Tea Museum,cleanliness,0.46,10,9,1,0,0.9,0.1
+Ceylon Tea Museum,cost,0.256,81,45,5,31,0.556,0.062
+Ceylon Tea Museum,crowd,0.181,25,9,2,14,0.36,0.08
+Ceylon Tea Museum,staff,0.39,129,89,12,28,0.69,0.093
+Colombo National Museum,accessibility,0.276,32,21,4,7,0.656,0.125
+Colombo National Museum,cleanliness,0.629,11,11,0,0,1.0,0.0
+Colombo National Museum,cost,0.176,70,32,9,29,0.457,0.129
+Colombo National Museum,crowd,0.235,26,15,4,7,0.577,0.154
+Colombo National Museum,safety,0.261,5,3,1,1,0.6,0.2
+Colombo National Museum,staff,0.273,31,19,6,6,0.613,0.194
+Community Tsunami Museum,accessibility,-0.01,54,16,15,23,0.296,0.278
+Community Tsunami Museum,cost,0.147,48,26,15,7,0.542,0.312
+Community Tsunami Museum,crowd,0.288,8,6,1,1,0.75,0.125
+Community Tsunami Museum,safety,-0.206,12,5,7,0,0.417,0.583
+Community Tsunami Museum,staff,0.349,43,32,6,5,0.744,0.14
+Dagoba of Thuparama,accessibility,0.031,10,3,2,5,0.3,0.2
+Dagoba of Thuparama,cost,-0.236,8,0,5,3,0.0,0.625
+Dagoba of Thuparama,crowd,0.522,9,7,1,1,0.778,0.111
+Dagoba of Thuparama,staff,0.106,3,1,0,2,0.333,0.0
+Dambatenne Tea Factory,accessibility,0.288,61,34,9,18,0.557,0.148
+Dambatenne Tea Factory,cleanliness,0.09,28,14,9,5,0.5,0.321
+Dambatenne Tea Factory,cost,0.061,65,19,17,29,0.292,0.262
+Dambatenne Tea Factory,crowd,0.019,9,3,4,2,0.333,0.444
+Dambatenne Tea Factory,staff,0.078,105,50,41,14,0.476,0.39
+Dambulla Cave Temple,accessibility,0.25,237,140,28,69,0.591,0.118
+Dambulla Cave Temple,cleanliness,0.259,9,7,2,0,0.778,0.222
+Dambulla Cave Temple,cost,0.102,101,38,17,46,0.376,0.168
+Dambulla Cave Temple,crowd,0.311,40,26,5,9,0.65,0.125
+Dambulla Cave Temple,safety,0.263,16,12,2,2,0.75,0.125
+Dambulla Cave Temple,staff,0.167,80,44,14,22,0.55,0.175
+Damro Labookellie Tea Centre and Tea Garden,accessibility,0.318,20,11,2,7,0.55,0.1
+Damro Labookellie Tea Centre and Tea Garden,cleanliness,0.353,7,5,2,0,0.714,0.286
+Damro Labookellie Tea Centre and Tea Garden,cost,0.266,26,15,4,7,0.577,0.154
+Damro Labookellie Tea Centre and Tea Garden,crowd,0.106,9,5,2,2,0.556,0.222
+Damro Labookellie Tea Centre and Tea Garden,staff,0.417,53,41,8,4,0.774,0.151
+Diyaluma Falls,accessibility,0.227,128,69,19,40,0.539,0.148
+Diyaluma Falls,cleanliness,-0.314,4,0,3,1,0.0,0.75
+Diyaluma Falls,cost,0.166,9,3,2,4,0.333,0.222
+Diyaluma Falls,crowd,0.033,14,5,4,5,0.357,0.286
+Diyaluma Falls,safety,0.138,9,6,1,2,0.667,0.111
+Diyaluma Falls,staff,0.368,38,27,3,8,0.711,0.079
+Galle Fort,accessibility,0.351,164,109,13,42,0.665,0.079
+Galle Fort,cleanliness,0.467,16,13,2,1,0.812,0.125
+Galle Fort,cost,0.275,40,23,2,15,0.575,0.05
+Galle Fort,crowd,0.353,34,21,3,10,0.618,0.088
+Galle Fort,safety,0.317,14,11,2,1,0.786,0.143
+Galle Fort,staff,0.407,30,23,3,4,0.767,0.1
+Gangaramaya (Vihara) Buddhist Temple,accessibility,0.284,47,26,5,16,0.553,0.106
+Gangaramaya (Vihara) Buddhist Temple,cleanliness,0.312,11,8,3,0,0.727,0.273
+Gangaramaya (Vihara) Buddhist Temple,cost,0.13,75,24,13,38,0.32,0.173
+Gangaramaya (Vihara) Buddhist Temple,crowd,0.54,77,67,5,5,0.87,0.065
+Gangaramaya (Vihara) Buddhist Temple,safety,0.141,3,2,1,0,0.667,0.333
+Gangaramaya (Vihara) Buddhist Temple,staff,0.311,31,19,3,9,0.613,0.097
+Glenloch Tea Factory,accessibility,0.292,49,31,8,10,0.633,0.163
+Glenloch Tea Factory,cleanliness,0.244,24,15,7,2,0.625,0.292
+Glenloch Tea Factory,cost,0.206,70,37,8,25,0.529,0.114
+Glenloch Tea Factory,crowd,0.209,41,21,8,12,0.512,0.195
+Glenloch Tea Factory,staff,0.284,219,137,38,44,0.626,0.174
+Gregory Lake,accessibility,0.347,100,63,11,26,0.63,0.11
+Gregory Lake,cleanliness,0.25,50,33,13,4,0.66,0.26
+Gregory Lake,cost,0.15,79,30,11,38,0.38,0.139
+Gregory Lake,crowd,0.17,44,23,12,9,0.523,0.273
+Gregory Lake,safety,0.115,5,2,3,0,0.4,0.6
+Gregory Lake,staff,0.175,16,11,4,1,0.688,0.25
+Hakgala Botanic Gardens,accessibility,0.215,74,33,14,27,0.446,0.189
+Hakgala Botanic Gardens,cleanliness,0.216,19,12,6,1,0.632,0.316
+Hakgala Botanic Gardens,cost,0.137,108,44,15,49,0.407,0.139
+Hakgala Botanic Gardens,crowd,0.336,35,20,4,11,0.571,0.114
+Hakgala Botanic Gardens,safety,0.206,6,4,1,1,0.667,0.167
+Hakgala Botanic Gardens,staff,0.26,34,21,2,11,0.618,0.059
+Halpewatte Tea Factory Tour,accessibility,0.235,127,62,10,55,0.488,0.079
+Halpewatte Tea Factory Tour,cleanliness,0.24,13,6,1,6,0.462,0.077
+Halpewatte Tea Factory Tour,cost,0.21,77,35,6,36,0.455,0.078
+Halpewatte Tea Factory Tour,crowd,0.079,19,10,7,2,0.526,0.368
+Halpewatte Tea Factory Tour,safety,0.232,3,2,1,0,0.667,0.333
+Halpewatte Tea Factory Tour,staff,0.441,170,126,14,30,0.741,0.082
+Handunugoda Tea Estate,accessibility,0.33,95,59,10,26,0.621,0.105
+Handunugoda Tea Estate,cleanliness,0.508,9,8,0,1,0.889,0.0
+Handunugoda Tea Estate,cost,0.206,77,50,19,8,0.649,0.247
+Handunugoda Tea Estate,crowd,0.368,28,19,5,4,0.679,0.179
+Handunugoda Tea Estate,safety,-0.028,4,2,2,0,0.5,0.5
+Handunugoda Tea Estate,staff,0.436,199,151,11,37,0.759,0.055
+Hikkaduwa Beach,accessibility,0.301,65,41,10,14,0.631,0.154
+Hikkaduwa Beach,cleanliness,0.429,54,39,11,4,0.722,0.204
+Hikkaduwa Beach,cost,0.135,30,16,10,4,0.533,0.333
+Hikkaduwa Beach,crowd,0.174,77,41,20,16,0.532,0.26
+Hikkaduwa Beach,safety,0.259,40,24,13,3,0.6,0.325
+Hikkaduwa Beach,staff,0.395,27,19,4,4,0.704,0.148
+Horton Plains National Park,accessibility,0.267,201,118,30,53,0.587,0.149
+Horton Plains National Park,cleanliness,0.361,21,15,3,3,0.714,0.143
+Horton Plains National Park,cost,0.089,66,22,17,27,0.333,0.258
+Horton Plains National Park,crowd,0.162,43,18,14,11,0.419,0.326
+Horton Plains National Park,safety,0.308,11,8,3,0,0.727,0.273
+Horton Plains National Park,staff,0.101,49,26,17,6,0.531,0.347
+Isurumuniya Temple,accessibility,0.3,83,49,4,30,0.59,0.048
+Isurumuniya Temple,cleanliness,0.417,6,5,1,0,0.833,0.167
+Isurumuniya Temple,cost,0.118,50,18,6,26,0.36,0.12
+Isurumuniya Temple,crowd,0.43,28,22,0,6,0.786,0.0
+Isurumuniya Temple,safety,-0.353,4,1,3,0,0.25,0.75
+Isurumuniya Temple,staff,0.263,20,12,4,4,0.6,0.2
+Jaffna Fort,accessibility,0.31,71,45,8,18,0.634,0.113
+Jaffna Fort,cleanliness,0.008,17,5,8,4,0.294,0.471
+Jaffna Fort,cost,-0.056,16,4,7,5,0.25,0.438
+Jaffna Fort,crowd,0.429,17,14,2,1,0.824,0.118
+Jaffna Fort,safety,0.227,6,3,1,2,0.5,0.167
+Jaffna Fort,staff,0.419,32,25,1,6,0.781,0.031
+Jaya Sri Maha Bodhi,accessibility,0.239,43,20,6,17,0.465,0.14
+Jaya Sri Maha Bodhi,cleanliness,-0.102,7,3,4,0,0.429,0.571
+Jaya Sri Maha Bodhi,cost,0.164,43,21,11,11,0.488,0.256
+Jaya Sri Maha Bodhi,crowd,0.441,73,58,2,13,0.795,0.027
+Jaya Sri Maha Bodhi,safety,0.414,11,8,2,1,0.727,0.182
+Jaya Sri Maha Bodhi,staff,0.35,34,22,3,9,0.647,0.088
+Jethawanaramaya Stupa,accessibility,0.155,37,16,6,15,0.432,0.162
+Jethawanaramaya Stupa,cleanliness,0.364,9,7,1,1,0.778,0.111
+Jethawanaramaya Stupa,cost,0.032,39,11,13,15,0.282,0.333
+Jethawanaramaya Stupa,crowd,0.415,25,18,2,5,0.72,0.08
+Jethawanaramaya Stupa,safety,0.45,3,3,0,0,1.0,0.0
+Jethawanaramaya Stupa,staff,0.258,23,10,3,10,0.435,0.13
+Jungle Beach,accessibility,0.265,128,80,13,35,0.625,0.102
+Jungle Beach,cleanliness,0.075,76,34,28,14,0.447,0.368
+Jungle Beach,cost,0.137,6,3,1,2,0.5,0.167
+Jungle Beach,crowd,0.334,84,55,9,20,0.655,0.107
+Jungle Beach,safety,0.287,8,6,2,0,0.75,0.25
+Jungle Beach,staff,0.518,5,4,1,0,0.8,0.2
+Kalametiya Eco Bird Watching,accessibility,0.401,28,18,2,8,0.643,0.071
+Kalametiya Eco Bird Watching,cost,0.547,10,9,0,1,0.9,0.0
+Kalametiya Eco Bird Watching,crowd,0.675,44,40,0,4,0.909,0.0
+Kalametiya Eco Bird Watching,staff,0.595,93,77,0,16,0.828,0.0
+Kalutara Beach,accessibility,0.346,59,41,10,8,0.695,0.169
+Kalutara Beach,cleanliness,0.238,95,61,28,6,0.642,0.295
+Kalutara Beach,cost,0.139,9,4,2,3,0.444,0.222
+Kalutara Beach,crowd,0.558,30,27,2,1,0.9,0.067
+Kalutara Beach,safety,0.255,49,32,16,1,0.653,0.327
+Kalutara Beach,staff,0.541,22,19,2,1,0.864,0.091
+Kandy Lake,accessibility,0.32,218,135,18,65,0.619,0.083
+Kandy Lake,cleanliness,0.21,32,20,11,1,0.625,0.344
+Kandy Lake,cost,0.355,10,6,1,3,0.6,0.1
+Kandy Lake,crowd,0.353,80,55,12,13,0.688,0.15
+Kandy Lake,safety,0.334,5,3,1,1,0.6,0.2
+Kandy Lake,staff,0.375,7,4,1,2,0.571,0.143
+Kaudulla National Park,accessibility,0.174,50,24,5,21,0.48,0.1
+Kaudulla National Park,cleanliness,-0.07,3,2,1,0,0.667,0.333
+Kaudulla National Park,cost,0.215,34,17,5,12,0.5,0.147
+Kaudulla National Park,crowd,0.139,44,21,8,15,0.477,0.182
+Kaudulla National Park,safety,0.376,7,6,1,0,0.857,0.143
+Kaudulla National Park,staff,0.377,33,22,1,10,0.667,0.03
+Kelaniya Raja Maha Vihara,accessibility,0.135,35,11,3,21,0.314,0.086
+Kelaniya Raja Maha Vihara,cleanliness,0.464,11,9,2,0,0.818,0.182
+Kelaniya Raja Maha Vihara,cost,0.158,15,6,3,6,0.4,0.2
+Kelaniya Raja Maha Vihara,crowd,0.491,75,59,3,13,0.787,0.04
+Kelaniya Raja Maha Vihara,safety,-0.089,4,1,3,0,0.25,0.75
+Kelaniya Raja Maha Vihara,staff,0.452,16,12,0,4,0.75,0.0
+Koneswaram Temple,accessibility,0.182,105,48,15,42,0.457,0.143
+Koneswaram Temple,cleanliness,0.18,14,8,6,0,0.571,0.429
+Koneswaram Temple,cost,0.08,26,11,9,6,0.423,0.346
+Koneswaram Temple,crowd,0.403,34,23,5,6,0.676,0.147
+Koneswaram Temple,staff,0.431,31,25,1,5,0.806,0.032
+Kumana National Park,accessibility,0.153,21,9,4,8,0.429,0.19
+Kumana National Park,cleanliness,0.421,3,2,0,1,0.667,0.0
+Kumana National Park,cost,0.244,12,7,1,4,0.583,0.083
+Kumana National Park,crowd,0.446,6,5,0,1,0.833,0.0
+Kumana National Park,staff,0.342,12,8,1,3,0.667,0.083
+Liptons Seat,accessibility,0.28,371,215,38,118,0.58,0.102
+Liptons Seat,cleanliness,0.102,4,2,2,0,0.5,0.5
+Liptons Seat,cost,0.192,53,26,4,23,0.491,0.075
+Liptons Seat,crowd,0.417,17,12,1,4,0.706,0.059
+Liptons Seat,safety,0.052,5,3,1,1,0.6,0.2
+Liptons Seat,staff,0.572,17,14,0,3,0.824,0.0
+Lover's Leap Falls,accessibility,0.24,244,127,31,86,0.52,0.127
+Lover's Leap Falls,cleanliness,0.176,7,5,2,0,0.714,0.286
+Lover's Leap Falls,cost,0.199,18,9,4,5,0.5,0.222
+Lover's Leap Falls,crowd,0.467,16,13,0,3,0.812,0.0
+Lover's Leap Falls,safety,-0.058,7,3,4,0,0.429,0.571
+Lover's Leap Falls,staff,0.214,13,7,5,1,0.538,0.385
+Marble Beach,accessibility,0.169,47,22,11,14,0.468,0.234
+Marble Beach,cleanliness,0.501,51,45,6,0,0.882,0.118
+Marble Beach,cost,0.167,39,16,8,15,0.41,0.205
+Marble Beach,crowd,0.333,60,36,7,17,0.6,0.117
+Marble Beach,safety,0.484,21,18,2,1,0.857,0.095
+Marble Beach,staff,0.666,18,16,0,2,0.889,0.0
+Martin Wickramasinghe Folk Museum Complex,accessibility,0.126,29,10,4,15,0.345,0.138
+Martin Wickramasinghe Folk Museum Complex,cleanliness,0.165,3,2,1,0,0.667,0.333
+Martin Wickramasinghe Folk Museum Complex,cost,0.215,14,8,1,5,0.571,0.071
+Martin Wickramasinghe Folk Museum Complex,crowd,0.671,9,8,0,1,0.889,0.0
+Martin Wickramasinghe Folk Museum Complex,staff,0.295,25,14,5,6,0.56,0.2
+Mihintale,accessibility,0.247,252,142,35,75,0.563,0.139
+Mihintale,cost,0.18,56,27,7,22,0.482,0.125
+Mihintale,crowd,0.463,62,45,2,15,0.726,0.032
+Mihintale,safety,0.104,9,5,4,0,0.556,0.444
+Mihintale,staff,0.291,59,38,6,15,0.644,0.102
+Minneriya National Park,accessibility,0.166,77,31,16,30,0.403,0.208
+Minneriya National Park,cleanliness,-0.112,5,2,3,0,0.4,0.6
+Minneriya National Park,cost,0.071,39,13,10,16,0.333,0.256
+Minneriya National Park,crowd,0.109,50,23,15,12,0.46,0.3
+Minneriya National Park,safety,0.512,8,8,0,0,1.0,0.0
+Minneriya National Park,staff,0.257,50,28,8,14,0.56,0.16
+Minneriya Tusker Safaris,accessibility,0.244,37,19,7,11,0.514,0.189
+Minneriya Tusker Safaris,cleanliness,-0.01,5,2,1,2,0.4,0.2
+Minneriya Tusker Safaris,cost,0.049,37,9,6,22,0.243,0.162
+Minneriya Tusker Safaris,crowd,0.262,20,13,1,6,0.65,0.05
+Minneriya Tusker Safaris,safety,0.19,6,5,1,0,0.833,0.167
+Minneriya Tusker Safaris,staff,0.459,28,21,2,5,0.75,0.071
+Mirissa Beach,accessibility,0.315,69,41,9,19,0.594,0.13
+Mirissa Beach,cleanliness,0.603,64,55,2,7,0.859,0.031
+Mirissa Beach,cost,0.336,27,19,4,4,0.704,0.148
+Mirissa Beach,crowd,0.301,70,41,9,20,0.586,0.129
+Mirissa Beach,safety,0.232,28,21,7,0,0.75,0.25
+Mirissa Beach,staff,0.344,20,13,4,3,0.65,0.2
+Mount Lavinia Beach,accessibility,0.345,74,46,6,22,0.622,0.081
+Mount Lavinia Beach,cleanliness,0.292,60,41,12,7,0.683,0.2
+Mount Lavinia Beach,cost,0.276,18,10,0,8,0.556,0.0
+Mount Lavinia Beach,crowd,0.257,39,18,5,16,0.462,0.128
+Mount Lavinia Beach,safety,0.372,16,11,2,3,0.688,0.125
+Mount Lavinia Beach,staff,0.5,44,36,6,2,0.818,0.136
+Nallur Kovil,accessibility,0.311,29,14,1,14,0.483,0.034
+Nallur Kovil,cleanliness,0.624,11,10,1,0,0.909,0.091
+Nallur Kovil,cost,0.409,7,5,0,2,0.714,0.0
+Nallur Kovil,crowd,0.434,56,42,3,11,0.75,0.054
+Nallur Kovil,staff,0.239,24,13,3,8,0.542,0.125
+National Zoological Gardens of Sri Lanka,accessibility,0.237,42,24,6,12,0.571,0.143
+National Zoological Gardens of Sri Lanka,cleanliness,0.161,42,23,18,1,0.548,0.429
+National Zoological Gardens of Sri Lanka,cost,0.124,90,35,22,33,0.389,0.244
+National Zoological Gardens of Sri Lanka,crowd,0.067,40,15,15,10,0.375,0.375
+National Zoological Gardens of Sri Lanka,safety,0.134,9,4,5,0,0.444,0.556
+National Zoological Gardens of Sri Lanka,staff,0.032,31,11,12,8,0.355,0.387
+Negombo Beach,accessibility,0.3,53,35,11,7,0.66,0.208
+Negombo Beach,cleanliness,0.042,128,56,52,20,0.438,0.406
+Negombo Beach,cost,0.193,17,8,2,7,0.471,0.118
+Negombo Beach,crowd,0.373,33,22,3,8,0.667,0.091
+Negombo Beach,safety,-0.055,12,6,6,0,0.5,0.5
+Negombo Beach,staff,0.189,27,15,8,4,0.556,0.296
+New Ranweli Spice Garden,accessibility,0.162,54,29,12,13,0.537,0.222
+New Ranweli Spice Garden,cleanliness,0.246,13,8,2,3,0.615,0.154
+New Ranweli Spice Garden,cost,0.109,87,35,24,28,0.402,0.276
+New Ranweli Spice Garden,crowd,0.15,14,8,3,3,0.571,0.214
+New Ranweli Spice Garden,safety,-0.024,10,4,6,0,0.4,0.6
+New Ranweli Spice Garden,staff,0.374,101,70,7,24,0.693,0.069
+Nilaveli Beach,accessibility,0.201,33,18,3,12,0.545,0.091
+Nilaveli Beach,cleanliness,0.432,82,64,11,7,0.78,0.134
+Nilaveli Beach,cost,0.242,9,5,1,3,0.556,0.111
+Nilaveli Beach,crowd,0.424,68,46,2,20,0.676,0.029
+Nilaveli Beach,safety,0.506,19,16,3,0,0.842,0.158
+Nilaveli Beach,staff,0.722,11,11,0,0,1.0,0.0
+Passikudah Beach,accessibility,0.23,52,27,7,18,0.519,0.135
+Passikudah Beach,cleanliness,0.407,56,43,10,3,0.768,0.179
+Passikudah Beach,cost,0.33,12,9,2,1,0.75,0.167
+Passikudah Beach,crowd,0.427,68,46,4,18,0.676,0.059
+Passikudah Beach,safety,0.612,20,19,1,0,0.95,0.05
+Passikudah Beach,staff,0.668,9,9,0,0,1.0,0.0
+Pedro Tea Factory,accessibility,0.307,73,42,8,23,0.575,0.11
+Pedro Tea Factory,cleanliness,0.185,16,10,6,0,0.625,0.375
+Pedro Tea Factory,cost,0.155,67,29,11,27,0.433,0.164
+Pedro Tea Factory,crowd,0.345,14,9,2,3,0.643,0.143
+Pedro Tea Factory,safety,-0.27,3,1,2,0,0.333,0.667
+Pedro Tea Factory,staff,0.324,145,94,31,20,0.648,0.214
+Pigeon Island National Park,accessibility,0.057,30,12,13,5,0.4,0.433
+Pigeon Island National Park,cleanliness,0.084,23,10,10,3,0.435,0.435
+Pigeon Island National Park,cost,0.051,70,22,22,26,0.314,0.314
+Pigeon Island National Park,crowd,0.112,108,46,27,35,0.426,0.25
+Pigeon Island National Park,safety,0.188,25,15,8,2,0.6,0.32
+Pigeon Island National Park,staff,0.355,41,25,2,14,0.61,0.049
+Pinnawala Elephant Orphanage,accessibility,0.192,131,56,19,56,0.427,0.145
+Pinnawala Elephant Orphanage,cleanliness,0.208,16,10,5,1,0.625,0.312
+Pinnawala Elephant Orphanage,cost,0.098,135,48,30,57,0.356,0.222
+Pinnawala Elephant Orphanage,crowd,0.114,72,31,21,20,0.431,0.292
+Pinnawala Elephant Orphanage,safety,0.047,27,14,12,1,0.519,0.444
+Pinnawala Elephant Orphanage,staff,0.254,71,41,14,16,0.577,0.197
+Polonnaruwa,accessibility,0.111,150,61,34,55,0.407,0.227
+Polonnaruwa,cleanliness,0.417,12,10,2,0,0.833,0.167
+Polonnaruwa,cost,0.091,112,44,33,35,0.393,0.295
+Polonnaruwa,crowd,0.244,46,29,9,8,0.63,0.196
+Polonnaruwa,safety,0.035,12,7,5,0,0.583,0.417
+Polonnaruwa,staff,0.324,159,107,23,29,0.673,0.145
+Ramboda Waterfall,accessibility,0.24,198,102,23,73,0.515,0.116
+Ramboda Waterfall,cleanliness,0.316,3,2,1,0,0.667,0.333
+Ramboda Waterfall,cost,0.244,25,12,4,9,0.48,0.16
+Ramboda Waterfall,crowd,0.226,19,8,4,7,0.421,0.211
+Ramboda Waterfall,safety,0.248,17,13,4,0,0.765,0.235
+Ramboda Waterfall,staff,0.199,16,8,2,6,0.5,0.125
+Ravana Ella Falls,accessibility,0.211,135,73,22,40,0.541,0.163
+Ravana Ella Falls,cleanliness,0.123,9,6,3,0,0.667,0.333
+Ravana Ella Falls,cost,0.096,15,6,6,3,0.4,0.4
+Ravana Ella Falls,crowd,0.178,58,30,9,19,0.517,0.155
+Ravana Ella Falls,safety,0.237,22,18,4,0,0.818,0.182
+Ravana Ella Falls,staff,0.197,9,6,2,1,0.667,0.222
+Ritigala Forest Monastery,accessibility,0.153,148,72,36,40,0.486,0.243
+Ritigala Forest Monastery,cost,0.142,35,15,10,10,0.429,0.286
+Ritigala Forest Monastery,crowd,0.36,49,32,4,13,0.653,0.082
+Ritigala Forest Monastery,safety,-0.182,9,3,6,0,0.333,0.667
+Ritigala Forest Monastery,staff,0.22,70,38,16,16,0.543,0.229
+Royal Botanical Gardens,accessibility,0.356,119,79,12,28,0.664,0.101
+Royal Botanical Gardens,cleanliness,0.54,25,22,2,1,0.88,0.08
+Royal Botanical Gardens,cost,0.195,78,40,14,24,0.513,0.179
+Royal Botanical Gardens,crowd,0.499,78,62,4,12,0.795,0.051
+Royal Botanical Gardens,safety,0.531,4,4,0,0,1.0,0.0
+Royal Botanical Gardens,staff,0.345,50,35,6,9,0.7,0.12
+Ruwanwelisaya,accessibility,0.172,81,34,10,37,0.42,0.123
+Ruwanwelisaya,cleanliness,0.441,8,7,0,1,0.875,0.0
+Ruwanwelisaya,cost,0.111,35,12,7,16,0.343,0.2
+Ruwanwelisaya,crowd,0.371,61,44,6,11,0.721,0.098
+Ruwanwelisaya,safety,0.223,6,3,1,2,0.5,0.167
+Ruwanwelisaya,staff,0.281,33,17,3,13,0.515,0.091
+Samadhi Statue,accessibility,0.251,15,8,4,3,0.533,0.267
+Samadhi Statue,cost,0.142,14,4,2,8,0.286,0.143
+Samadhi Statue,crowd,0.591,20,18,0,2,0.9,0.0
+Samadhi Statue,staff,-0.035,6,1,1,4,0.167,0.167
+Sea Turtle Farm Galle Mahamodara,accessibility,0.183,32,15,6,11,0.469,0.188
+Sea Turtle Farm Galle Mahamodara,cleanliness,-0.154,4,1,3,0,0.25,0.75
+Sea Turtle Farm Galle Mahamodara,cost,0.16,49,25,11,13,0.51,0.224
+Sea Turtle Farm Galle Mahamodara,crowd,0.096,11,6,4,1,0.545,0.364
+Sea Turtle Farm Galle Mahamodara,safety,0.306,8,6,2,0,0.75,0.25
+Sea Turtle Farm Galle Mahamodara,staff,0.485,30,23,3,4,0.767,0.1
+Sigiriya Museum,accessibility,0.268,123,72,11,40,0.585,0.089
+Sigiriya Museum,cleanliness,0.013,18,7,8,3,0.389,0.444
+Sigiriya Museum,cost,0.092,119,38,17,64,0.319,0.143
+Sigiriya Museum,crowd,0.045,14,5,3,6,0.357,0.214
+Sigiriya Museum,safety,0.693,3,3,0,0,1.0,0.0
+Sigiriya Museum,staff,0.156,55,26,13,16,0.473,0.236
+Sigiriya The Ancient Rock Fortress,accessibility,0.234,342,206,56,80,0.602,0.164
+Sigiriya The Ancient Rock Fortress,cleanliness,0.334,11,8,3,0,0.727,0.273
+Sigiriya The Ancient Rock Fortress,cost,0.162,97,48,21,28,0.495,0.216
+Sigiriya The Ancient Rock Fortress,crowd,0.269,69,40,10,19,0.58,0.145
+Sigiriya The Ancient Rock Fortress,safety,0.152,26,19,7,0,0.731,0.269
+Sigiriya The Ancient Rock Fortress,staff,0.289,80,56,9,15,0.7,0.112
+Sinharaja Forest Reserve,accessibility,0.208,164,82,19,63,0.5,0.116
+Sinharaja Forest Reserve,cleanliness,0.178,12,6,3,3,0.5,0.25
+Sinharaja Forest Reserve,cost,0.123,60,24,12,24,0.4,0.2
+Sinharaja Forest Reserve,crowd,0.162,32,14,10,8,0.438,0.312
+Sinharaja Forest Reserve,safety,-0.134,18,7,11,0,0.389,0.611
+Sinharaja Forest Reserve,staff,0.25,215,116,33,66,0.54,0.153
+St Clair's Falls,accessibility,0.277,75,43,10,22,0.573,0.133
+St Clair's Falls,cost,0.079,4,1,1,2,0.25,0.25
+St Clair's Falls,crowd,0.186,5,2,1,2,0.4,0.2
+St Clair's Falls,safety,0.283,3,2,0,1,0.667,0.0
+Temple of the Sacred Tooth Relic,accessibility,0.187,47,23,7,17,0.489,0.149
+Temple of the Sacred Tooth Relic,cleanliness,0.36,7,5,1,1,0.714,0.143
+Temple of the Sacred Tooth Relic,cost,0.031,91,24,20,47,0.264,0.22
+Temple of the Sacred Tooth Relic,crowd,0.319,111,64,3,44,0.577,0.027
+Temple of the Sacred Tooth Relic,safety,0.316,33,28,5,0,0.848,0.152
+Temple of the Sacred Tooth Relic,staff,0.24,91,52,17,22,0.571,0.187
+Tissa Wewa,accessibility,0.324,49,29,2,18,0.592,0.041
+Tissa Wewa,cleanliness,0.736,5,5,0,0,1.0,0.0
+Tissa Wewa,cost,0.184,4,1,0,3,0.25,0.0
+Tissa Wewa,crowd,0.649,13,12,1,0,0.923,0.077
+Tissa Wewa,staff,0.474,7,6,1,0,0.857,0.143
+Twin Baths (Kuttam Pokuna),accessibility,0.183,21,9,4,8,0.429,0.19
+Twin Baths (Kuttam Pokuna),cleanliness,0.251,25,16,6,3,0.64,0.24
+Twin Baths (Kuttam Pokuna),cost,0.24,24,11,3,10,0.458,0.125
+Twin Baths (Kuttam Pokuna),crowd,0.464,20,14,0,6,0.7,0.0
+Twin Baths (Kuttam Pokuna),staff,0.307,24,14,2,8,0.583,0.083
+Udawalawe National Park,accessibility,0.178,55,26,8,21,0.473,0.145
+Udawalawe National Park,cleanliness,0.268,6,3,3,0,0.5,0.5
+Udawalawe National Park,cost,0.248,50,27,7,16,0.54,0.14
+Udawalawe National Park,crowd,0.433,24,19,2,3,0.792,0.083
+Udawalawe National Park,safety,0.524,10,9,0,1,0.9,0.0
+Udawalawe National Park,staff,0.46,105,79,4,22,0.752,0.038
+Udawattekele Sanctuary,accessibility,0.333,197,122,19,56,0.619,0.096
+Udawattekele Sanctuary,cleanliness,0.153,15,8,6,1,0.533,0.4
+Udawattekele Sanctuary,cost,0.139,65,27,11,27,0.415,0.169
+Udawattekele Sanctuary,crowd,0.438,99,76,12,11,0.768,0.121
+Udawattekele Sanctuary,safety,0.252,13,8,4,1,0.615,0.308
+Udawattekele Sanctuary,staff,0.421,20,14,2,4,0.7,0.1
+Victoria Park of Nuwara Eliya,accessibility,0.483,74,61,2,11,0.824,0.027
+Victoria Park of Nuwara Eliya,cleanliness,0.126,42,20,13,9,0.476,0.31
+Victoria Park of Nuwara Eliya,cost,0.055,90,28,28,34,0.311,0.311
+Victoria Park of Nuwara Eliya,crowd,0.451,48,36,6,6,0.75,0.125
+Victoria Park of Nuwara Eliya,safety,0.164,10,6,3,1,0.6,0.3
+Victoria Park of Nuwara Eliya,staff,0.271,12,8,3,1,0.667,0.25
+Wilpattu National Park,accessibility,0.149,111,47,18,46,0.423,0.162
+Wilpattu National Park,cleanliness,0.024,22,10,9,3,0.455,0.409
+Wilpattu National Park,cost,0.105,69,26,16,27,0.377,0.232
+Wilpattu National Park,crowd,0.254,77,41,9,27,0.532,0.117
+Wilpattu National Park,safety,0.197,11,8,3,0,0.727,0.273
+Wilpattu National Park,staff,0.233,93,53,16,24,0.57,0.172
+World Buddhist Museum,accessibility,0.324,8,5,1,2,0.625,0.125
+World Buddhist Museum,cost,0.232,30,15,4,11,0.5,0.133
+World Buddhist Museum,crowd,0.177,11,6,1,4,0.545,0.091
+World Buddhist Museum,safety,0.157,4,2,0,2,0.5,0.0
+World Buddhist Museum,staff,0.271,17,10,2,5,0.588,0.118
