@@ -30,9 +30,103 @@ if 'user' not in st.session_state:
     st.session_state['user'] = None
 if 'current_recommendations' not in st.session_state:
     st.session_state['current_recommendations'] = []
+# Persist the travel query between Streamlit reruns. A default `value=` on a
+# text_input does not update an existing widget when a preset button is clicked.
+if 'recommendation_query' not in st.session_state:
+    st.session_state['recommendation_query'] = 'quiet relaxing beach with cheap budget food'
+if 'recommendation_month' not in st.session_state:
+    st.session_state['recommendation_month'] = 'Any'
+if 'recommendation_last_request' not in st.session_state:
+    st.session_state['recommendation_last_request'] = None
 
-st.title("🏝️ Sri Lanka Tourism: AI-Powered Analytics & Recommendation Platform")
-st.markdown("Developed for IT4010 Research Project **J26-IT-443** (Software Systems & Technologies)")
+
+def reset_recommendation_results():
+    """Hide results from an old query or month until the user runs a new search."""
+    st.session_state['current_recommendations'] = []
+    st.session_state['recommendation_last_request'] = None
+
+# --- Authentication gate: only signed-in users may reach project features. ---
+# Keeping this before load_assets() also avoids loading ML models for guests.
+if st.session_state['user'] is None:
+    st.sidebar.title("🔐 User Portal")
+    access_mode = st.sidebar.radio("Account Access:", ["Login", "Register"], horizontal=True, key="access_mode")
+
+    if access_mode == "Login":
+        with st.sidebar.form("user_login_form"):
+            login_user = st.text_input("Username", key="l_user")
+            login_pass = st.text_input("Password", type="password", key="l_pass")
+            login_requested = st.form_submit_button("Sign In", type="primary", use_container_width=True)
+        if login_requested:
+            # The old development credentials were publicly shown in the UI.
+            # Blocking this default pair is only a temporary measure; audit
+            # src/database.py and delete/rotate any seeded demo account.
+            if login_user.strip().lower() == "admin" and login_pass == "admin123":
+                st.sidebar.error("Default demo credentials are disabled. Use a personal account.")
+            elif not login_user.strip() or not login_pass:
+                st.sidebar.error("Enter both username and password.")
+            else:
+                user_record = db.authenticate_user(login_user.strip(), login_pass)
+                if user_record:
+                    st.session_state['user'] = user_record
+                    st.rerun()
+                else:
+                    st.sidebar.error("Invalid username or password.")
+    else:
+        with st.sidebar.form("user_registration_form", clear_on_submit=True):
+            reg_user = st.text_input("Choose a username", key="r_user")
+            reg_pass = st.text_input("Create a password", type="password", key="r_pass")
+            reg_pass_confirm = st.text_input("Confirm password", type="password", key="r_pass_confirm")
+            register_requested = st.form_submit_button("Create Account", type="primary", use_container_width=True)
+        if register_requested:
+            if not reg_user.strip() or not reg_pass:
+                st.sidebar.error("Username and password are required.")
+            elif reg_pass != reg_pass_confirm:
+                st.sidebar.error("Passwords do not match.")
+            else:
+                # Registration grants the regular Tourist role only. Privileged
+                # roles should be assigned by a trusted administrator instead.
+                registered, msg = db.register_user(reg_user.strip(), reg_pass, "Tourist")
+                if registered:
+                    st.sidebar.success(f"{msg} Select Login to sign in.")
+                else:
+                    st.sidebar.error(msg)
+
+    st.title("🏝️ Sri Lanka Tourism: AI-Powered Analytics & Recommendation Platform")
+    st.markdown("Developed for IT4010 Research Project **J26-IT-443** (Software Systems & Technologies)")
+    st.info("🔒 Please sign in or create an account to use sentiment analysis, destination insights, recommendations and forecasting.")
+    # This stops the current Streamlit run before any protected tab/UI is created.
+    st.stop()
+
+# Signed-in page header and profile, separate from the old login sidebar.
+active_user = st.session_state['user']
+st.sidebar.caption(f"Signed in as **{active_user['username']}**")
+
+header_col, profile_col = st.columns([7, 2], vertical_alignment="center")
+with header_col:
+    st.title("🏝️ Sri Lanka Tourism: AI-Powered Analytics & Recommendation Platform")
+    st.caption("IT4010 Research Project · J26-IT-443 · Software Systems & Technologies")
+with profile_col:
+    with st.popover("👤 My Profile", use_container_width=True):
+        st.subheader("👤 My Profile")
+        st.markdown(f"**Username:** {active_user['username']}")
+        st.caption(f"Account role: {active_user.get('role', 'Tourist')}")
+        st.divider()
+        favorites = db.get_favorites(active_user['id'])
+        st.markdown(f"**⭐ Saved destinations ({len(favorites)})**")
+        if favorites:
+            for fav_i, fav_name in enumerate(favorites):
+                fav_name_col, remove_col = st.columns([5, 1], vertical_alignment="center")
+                fav_name_col.write(f"📍 {fav_name}")
+                if remove_col.button("✕", key=f"profile_remove_fav_{fav_i}", help=f"Remove {fav_name}"):
+                    db.remove_favorite(active_user['id'], fav_name)
+                    st.rerun()
+        else:
+            st.caption("No saved destinations yet. Open Component 3 and use ⭐ Save on a recommendation.")
+        st.divider()
+        if st.button("🚪 Log Out", key="profile_logout", use_container_width=True):
+            # Clear data from the previous user so the next sign-in has a clean session.
+            st.session_state.clear()
+            st.rerun()
 
 # --- Load Data & Models ---
 @st.cache_resource
@@ -131,62 +225,6 @@ def clean_text_inference(text, stop_words, lemmatizer):
     return ' '.join(words)
 
 if models_loaded:
-    # --- Sidebar User Authentication (SQLite) ---
-    st.sidebar.title("🔐 User Portal (SQLite)")
-    if st.session_state['user'] is None:
-        auth_mode = st.sidebar.radio("Account Access:", ["Login", "Register"], horizontal=True)
-        if auth_mode == "Login":
-            st.sidebar.subheader("Login")
-            login_user = st.sidebar.text_input("Username", key="l_user")
-            login_pass = st.sidebar.text_input("Password", type="password", key="l_pass")
-            if st.sidebar.button("Sign In", type="primary", use_container_width=True):
-                auth_data = db.authenticate_user(login_user, login_pass)
-                if auth_data:
-                    st.session_state['user'] = auth_data
-                    st.rerun()
-                else:
-                    st.sidebar.error("Invalid username or password.")
-            
-            st.sidebar.markdown("**— OR —**")
-            if st.sidebar.button("⚡ 1-Click Demo Login (Admin)", use_container_width=True):
-                demo_user = db.authenticate_user("admin", "admin123")
-                if demo_user:
-                    st.session_state['user'] = demo_user
-                    st.rerun()
-            st.sidebar.caption("💡 *Demo Credentials:* `admin` / `admin123`")
-        else:
-            st.sidebar.subheader("Register")
-            reg_user = st.sidebar.text_input("New Username", key="r_user")
-            reg_pass = st.sidebar.text_input("New Password", type="password", key="r_pass")
-            reg_role = st.sidebar.selectbox("Role", ["Tourist", "Tourism Officer", "Hotel/Tour Operator"], key="r_role")
-            if st.sidebar.button("Create Account", type="primary", use_container_width=True):
-                ok, msg = db.register_user(reg_user, reg_pass, reg_role)
-                if ok:
-                    st.sidebar.success(msg)
-                else:
-                    st.sidebar.error(msg)
-        st.sidebar.info("👤 *Browsing as Guest.* You can analyze reviews and get recommendations. Log in to save bookmarks to your personal profile.")
-    else:
-        user = st.session_state['user']
-        st.sidebar.success(f"👤 Logged in as: **{user['username']}**\n\nRole: `{user['role']}`")
-        if st.sidebar.button("Log Out", use_container_width=True):
-            st.session_state['user'] = None
-            st.rerun()
-
-        # User's Saved Favorites
-        st.sidebar.markdown("---")
-        st.sidebar.subheader("⭐ My Saved Destinations")
-        favs = db.get_favorites(user['id'])
-        if favs:
-            for f_idx, fav_dest in enumerate(favs):
-                f_col1, f_col2 = st.sidebar.columns([4, 1])
-                f_col1.write(f"📍 **{fav_dest}**")
-                if f_col2.button("❌", key=f"del_fav_{f_idx}", help=f"Remove {fav_dest}"):
-                    db.remove_favorite(user['id'], fav_dest)
-                    st.rerun()
-        else:
-            st.sidebar.caption("No destinations saved yet. Click ⭐ on any recommended card in Tab 3!")
-
     # --- Tab Navigation ---
     tab1, tab2, tab3, tab4 = st.tabs([
         "📊 Review Sentiment Engine (Gunarathna)", 
@@ -406,35 +444,51 @@ if models_loaded:
         st.header("Component 3: AI Multi-Factor Destination Recommender")
         st.write("Personalized travel recommendations combining **textual preference matching**, **aspect quality ratings**, **review-derived tags**, and **seasonal awareness**.")
         
-        # Quick Presets
+        # Quick presets: set widget session state BEFORE creating the text_input.
+        # Streamlit otherwise preserves its previous value on every button rerun.
         st.markdown("**Select Travel Interests (or type your own below):**")
         p_cols = st.columns(6)
-        preset_query = ""
-        if p_cols[0].button("🏖️ Beach & Surf"):
-            preset_query = "golden sandy beach with surfing waves ocean sunset and swimming"
-        if p_cols[1].button("🐘 Wildlife Safari"):
-            preset_query = "wild safari to see wild elephants and leopards in nature"
-        if p_cols[2].button("🏛️ Ancient Culture"):
-            preset_query = "ancient unesco world heritage ruins buddhist temples and rock fortress"
-        if p_cols[3].button("🍵 Tea & Hiking"):
-            preset_query = "cool mountain climate scenic hiking trails tea plantations and waterfalls"
-        if p_cols[4].button("💰 Budget Travel"):
-            preset_query = "cheap budget friendly backpacking with affordable street food"
-        if p_cols[5].button("🛡️ Family Safe"):
-            preset_query = "peaceful clean environment safe for children with friendly staff"
+        if p_cols[0].button("🏖️ Beach & Surf", key="preset_beach"):
+            st.session_state['recommendation_query'] = "golden sandy beach with surfing waves ocean sunset and swimming"
+            reset_recommendation_results()
+        if p_cols[1].button("🐘 Wildlife Safari", key="preset_wildlife"):
+            st.session_state['recommendation_query'] = "wild safari to see wild elephants and leopards in nature"
+            reset_recommendation_results()
+        if p_cols[2].button("🏛️ Ancient Culture", key="preset_culture"):
+            st.session_state['recommendation_query'] = "ancient unesco world heritage ruins buddhist temples and rock fortress"
+            reset_recommendation_results()
+        if p_cols[3].button("🍵 Tea & Hiking", key="preset_hiking"):
+            st.session_state['recommendation_query'] = "cool mountain climate scenic hiking trails tea plantations and waterfalls"
+            reset_recommendation_results()
+        if p_cols[4].button("💰 Budget Travel", key="preset_budget"):
+            st.session_state['recommendation_query'] = "cheap budget friendly backpacking with affordable street food"
+            reset_recommendation_results()
+        if p_cols[5].button("🛡️ Family Safe", key="preset_family"):
+            st.session_state['recommendation_query'] = "peaceful clean environment safe for children with friendly staff"
+            reset_recommendation_results()
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            initial_val = preset_query if preset_query else "quiet relaxing beach with cheap budget food"
-            query = st.text_input("What kind of experience are you looking for in Sri Lanka?", initial_val)
+            query = st.text_input(
+                "What kind of experience are you looking for in Sri Lanka?",
+                key="recommendation_query",
+                on_change=reset_recommendation_results,
+            )
         with col2:
-            travel_month = st.selectbox("Intended Travel Month", ["Any"] + [f"Month {m}" for m in range(1, 13)])
+            travel_month = st.selectbox(
+                "Intended Travel Month",
+                ["Any"] + [f"Month {m}" for m in range(1, 13)],
+                key="recommendation_month",
+                on_change=reset_recommendation_results,
+            )
             
         month_num = None
         if travel_month != "Any":
             month_num = int(travel_month.replace("Month ", ""))
 
-        if st.button("Generate Recommendations", type="primary") and query:
+        if st.button("Generate Recommendations", type="primary") and query.strip():
+            # The actual persisted widget value is passed to the trained TF-IDF vectorizer.
+            query = query.strip()
             q_vec = rec_vectorizer.transform([query])
             sims = cosine_similarity(q_vec, rec_tfidf).flatten()
 
@@ -491,11 +545,15 @@ if models_loaded:
                 })
 
             st.session_state['current_recommendations'] = sorted(results, key=lambda x: x['final_score'], reverse=True)[:4]
+            st.session_state['recommendation_last_request'] = {'query': query, 'month': travel_month}
 
-        # Render persisted recommendations
+        # Render persisted recommendations (only for the last generated query).
         if st.session_state.get('current_recommendations'):
             st.markdown("---")
             st.subheader("🎯 Top AI-Recommended Destinations")
+            last_request = st.session_state.get('recommendation_last_request')
+            if last_request:
+                st.caption(f"Recommendations generated for: {last_request['query']} | Travel month: {last_request['month']}")
 
             user_favs = []
             if st.session_state.get('user'):
